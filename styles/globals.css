@@ -17,8 +17,12 @@
   --tw-scale-x: 1;
   --tw-scale-y: 1;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
+  margin: 0;
   background: #23252F;
   color: #333;
   font-family: 'SF Pro text', -apple-system, BlinkMacSystemFont;;
@@ -31,15 +35,16 @@ a {
   margin: 0 auto;
 }
 nav {
+  background: #23252F;
   margin: 0px 20px 80px;
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: fixed;
+/*   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top: 0; */
 }
 nav .btn {
   margin-left: 12px;
@@ -55,6 +60,11 @@ nav .btn:hover {
   text-decoration: none;
   letter-spacing: 0;
   padding: .75rem 1.5rem;
+}
+#navbar {
+  max-width: 1280px;
+  margin:auto;
+  padding: auto 20px; 
 }
 #cta {
   background-color: var(--color-secondary);
@@ -73,6 +83,11 @@ main {
   padding-top: 10rem;
 }
 
+section {
+
+  background: #1a1c23; 
+}
+
 footer {
   display: block;
   text-align: center;
@@ -87,4 +102,11 @@ footer {
 .not-found a {
   color: #4979ff;
   text-decoration: underline;
+}
+.tilt {
+  opacity: 1;
+  animation: tilt .5s infinite;
+}
+@keyframes tilt {
+  100% {opacity: 0}
 }

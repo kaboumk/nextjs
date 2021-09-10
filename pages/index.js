@@ -7,16 +7,27 @@ import Link from 'next/dist/client/link'
 const Home = () => {
   return (
     <>
-   <Head>
+    <Head>
        <title>Atom Web & Designs | Home</title>
        <meta name="keywords" content="developpeur web site internet réunion"/>
     </Head>
     <main>
-      <p className={styles.littletitle}>Je suis Hubert Wasier</p>
-      <h1 className={styles.title}>Je crée des sites Web que vos utilisateurs vont adorer.</h1>
-      <maingrid className={styles.maingrid}>
+      <p className={styles.littletitle}>Bonjour, je m'appelle Hubert.</p>
+      <h1 className={styles.title}>Je crée les sites Web que vos utilisateurs vont adorer<span className="tilt">.</span></h1>
+      <section>
+        <maingrid className={styles.maingrid}>
+          <p className={`${styles.box} ${styles.argumentaire}`}>
+            <span>rapide</span>
+            <span>securisé</span>
+            <span>stable</span>
+            <span>évolutif</span>
+          </p>
+          <div className={styles.box}>titi</div>
+          <div className={styles.box}>tata</div>
+          <div className={styles.box}>tutu</div>
 
-      </maingrid>  
+        </maingrid>  
+      </section>
       <Link href="/ninjas">
         <a className={styles.btn}>See Ninjas Listing</a>
       </Link>

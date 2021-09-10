@@ -5,7 +5,7 @@ const Navbar = () => {
     const a=100
     const r=190/146
     return ( 
-        <nav>
+        <nav id="navbar">
             <div className="logo">
                 <Link href="/"><a><Image src="/logo.png"
                     width={a}
