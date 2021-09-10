@@ -12,9 +12,9 @@ const Navbar = () => {
                     height={a/r}
                 /></a></Link>
             </div>
-            <Link href="/"><a>Home</a></Link>
-            <Link href="about"><a>A propos</a></Link>
-            <Link href="contact"><a id='cta'>Contact</a></Link>
+            <Link href="/"><a className="btn">Home</a></Link>
+            <Link href="about"><a className="btn">A propos</a></Link>
+            <Link href="contact"><a id='cta' className="btn">Contact</a></Link>
         </nav>
      );
 }

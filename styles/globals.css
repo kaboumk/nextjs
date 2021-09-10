@@ -41,7 +41,7 @@ nav {
   right: 0;
   top: 0;
 }
-nav a {
+nav .btn {
   margin-left: 12px;
   text-decoration: none;
   letter-spacing: 0;
@@ -50,7 +50,7 @@ nav a {
   color: var(--color-inverted)
 
 }
-nav a:hover {
+nav .btn:hover {
   background-color: var(--color-neutral-muted);
   text-decoration: none;
   letter-spacing: 0;
