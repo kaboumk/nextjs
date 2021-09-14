@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/dist/client/link'
+import { useEffect } from 'react';
+
 
 
 
@@ -16,15 +18,14 @@ const Home = () => {
       <h1 className={styles.title}>Je crée les sites Web que vos utilisateurs vont adorer<span className="tilt">.</span></h1>
       <section>
         <maingrid className={styles.maingrid}>
-          <p className={`${styles.box} ${styles.argumentaire}`}>
-            <span>rapide</span>
-            <span>securisé</span>
-            <span>stable</span>
-            <span>évolutif</span>
-          </p>
+          <div className={`${styles.box} ${styles.argumentaire}`}>
+            <p>
+            rapide sécurisé stable évolutif
+            <span>dfgdfhghfgh</span>
+            </p>
+            <span className="top-right">1</span>
+          </div>
           <div className={styles.box}>titi</div>
-          <div className={styles.box}>tata</div>
-          <div className={styles.box}>tutu</div>
 
         </maingrid>  
       </section>
